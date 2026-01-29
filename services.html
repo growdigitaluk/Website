@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="light only">
+    <title>Our Services | How We Help You Grow - Grow Digital UK</title>
+    <meta name="description" content="Professional social media management & web development services in Manchester. Expert content creation, Instagram management, and modern websites that convert.">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://growdigitaluk.com/services.html">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://growdigitaluk.com/services.html">
+    <meta property="og:title" content="Our Services | How We Help You Grow - Grow Digital UK">
+    <meta property="og:description" content="Professional social media management & web development services in Manchester. Expert content creation, Instagram management, and modern websites that convert.">
+    <meta property="og:image" content="https://growdigitaluk.com/assets/images/logo.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://growdigitaluk.com/services.html">
+    <meta property="twitter:title" content="Our Services | How We Help You Grow - Grow Digital UK">
+    <meta property="twitter:description" content="Professional social media management & web development services in Manchester. Expert content creation, Instagram management, and modern websites that convert.">
+    <meta property="twitter:image" content="https://growdigitaluk.com/assets/images/logo.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --primary: #FF8FC2;
+            --primary-dark: #FF6BB0;
+            --accent: #D4FF00;
+            --accent-light: #E0FF66;
+            --dark: #1a1a1a;
+            --gray: #475569;
+            --light: #FFF8F0;
+            --white: #ffffff;
+            --gradient: linear-gradient(135deg, #FF8FC2 0%, #FF6BB0 100%);
+        }
+
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Inter', sans-serif; line-height: 1.6; color: var(--dark); background-color: #ffffff; overflow-x: hidden; }
+        .container { max-width: 1140px; margin: 0 auto; padding: 0 1rem; }
+
+        header { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); box-shadow: 0 1px 3px rgba(0,0,0,0.08); position: sticky; top: 0; z-index: 1000; transition: all 0.3s ease; }
+        nav { display: flex; justify-content: space-between; align-items: center; padding: 0.875rem 0; gap: 1rem; }
+        .logo { display: flex; align-items: center; gap: 0.5rem; text-decoration: none; }
+        .logo-img {
+            height: 40px;
+            width: auto;
+            display: block;
+        }
+        .logo-icon { width: 36px; height: 36px; background: var(--gradient); border-radius: 8px; display: none; align-items: center; justify-content: center; }
+        .logo-icon svg { width: 20px; height: 20px; color: white; }
+        .logo-text { font-size: 1.125rem; font-weight: 800; color: var(--dark); display: none; }
+        .logo-text span { color: var(--primary); }
+        .nav-links {
+            display: none;
+            gap: 2rem;
+            list-style: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(10px);
+            flex-direction: column;
+            padding: 1rem 0;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            border-top: 1px solid #e2e8f0;
+        }
+
+        .nav-links.active {
+            display: flex;
+        }
+
+        .nav-links li {
+            padding: 0 1.5rem;
+        }
+
+        .nav-links a {
+            display: block;
+            padding: 0.5rem 0;
+            color: var(--dark);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        .nav-links a:hover, .nav-links a.active { color: var(--primary); }
+
+        /* Hamburger Menu */
+        .menu-toggle {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0.5rem;
+            z-index: 1001;
+        }
+
+        .menu-toggle span {
+            display: block;
+            width: 24px;
+            height: 3px;
+            background: var(--dark);
+            border-radius: 2px;
+            transition: all 0.3s ease;
+        }
+
+        .menu-toggle.active span:nth-child(1) {
+            transform: rotate(45deg) translate(6px, 6px);
+        }
+
+        .menu-toggle.active span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .menu-toggle.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(6px, -6px);
+        }
+
+        nav {
+            position: relative;
+        }
+
+        .cta-btn { background: var(--gradient); color: var(--white); padding: 0.625rem 1.25rem; border-radius: 12px; text-decoration: none; font-weight: 700; font-size: 0.875rem; white-space: nowrap; display: inline-block; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(255, 105, 180, 0.3); }
+        .cta-btn:hover { transform: translateY(-2px); box-shadow: 0 8px 25px rgba(255, 105, 180, 0.4); }
+
+        .page-hero { background: linear-gradient(135deg, #FFF8F0 0%, #FFF0F5 100%); padding: 2.5rem 0 2rem; text-align: center; }
+        .page-hero h1 { font-size: 1.75rem; font-weight: 800; margin-bottom: 0.75rem; }
+        .gradient-text { background: var(--gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .page-hero p { font-size: 0.95rem; color: var(--gray); max-width: 600px; margin: 0 auto; }
+
+        .service-section { padding: 3rem 0; background: #ffffff !important; }
+        .service-section:nth-child(even) { background: #f8fafc !important; }
+        .service-content { display: flex; flex-direction: column; gap: 2rem; }
+
+        .service-header { margin-bottom: 1.5rem; }
+        .service-header h2 { font-size: 1.75rem; font-weight: 800; margin-bottom: 0.75rem; }
+        .service-header p { color: var(--gray); font-size: 0.95rem; line-height: 1.7; }
+
+        .service-badge { display: inline-block; padding: 0.375rem 0.75rem; background: #fef2f2; color: #dc2626; border-radius: 4px; font-weight: 700; font-size: 0.7rem; text-transform: uppercase; margin-bottom: 0.75rem; }
+
+        .platforms { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 1.25rem 0; }
+        .platform-badge { background: var(--white); border: 1px solid #e2e8f0; padding: 0.5rem 0.875rem; border-radius: 50px; font-weight: 600; font-size: 0.8rem; display: flex; align-items: center; gap: 0.5rem; }
+        .platform-badge svg { width: 16px; height: 16px; }
+
+        .features-list { list-style: none; margin: 1.5rem 0; }
+        .features-list li { padding: 0.625rem 0; display: flex; align-items: flex-start; gap: 0.625rem; font-size: 0.9rem; }
+        .features-list li svg { width: 20px; height: 20px; color: var(--accent); flex-shrink: 0; margin-top: 2px; }
+
+        .process-section { background: var(--light); padding: 1.5rem; border-radius: 12px; margin-top: 2rem; }
+        .process-section h3 { font-size: 1.25rem; font-weight: 700; margin-bottom: 1.25rem; }
+        .step { display: flex; gap: 1rem; margin-bottom: 1.25rem; }
+        .step:last-child { margin-bottom: 0; }
+        .step-number { width: 36px; height: 36px; background: var(--gradient); color: var(--white); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 0.875rem; flex-shrink: 0; }
+        .step-content h4 { font-weight: 700; font-size: 0.95rem; margin-bottom: 0.25rem; }
+        .step-content p { color: var(--gray); font-size: 0.85rem; line-height: 1.6; }
+
+        .disclaimer { background: #fefce8; border: 1px solid #fef08a; padding: 1.25rem; border-radius: 8px; margin-top: 1.5rem; }
+        .disclaimer p { font-size: 0.825rem; color: #854d0e; line-height: 1.7; }
+        .disclaimer strong { color: #713f12; }
+
+        .portfolio-section { padding: 3rem 0; background: #f8fafc; }
+        .section-header { text-align: center; margin-bottom: 2rem; }
+        .section-badge { display: inline-block; padding: 0.375rem 1rem; background: linear-gradient(135deg, rgba(255, 105, 180, 0.1) 0%, rgba(212, 255, 0, 0.1) 100%); color: var(--primary); border-radius: 50px; font-size: 0.75rem; font-weight: 700; text-transform: uppercase; margin-bottom: 0.75rem; border: 1px solid rgba(255, 105, 180, 0.2); }
+        .section-title { font-size: 1.5rem; font-weight: 800; margin-bottom: 0.5rem; }
+        .section-subtitle { color: var(--gray); font-size: 0.9rem; }
+        .portfolio-grid { display: grid; gap: 2rem; }
+
+        .ba-card { background: var(--white); border-radius: 16px; padding: 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.08); transition: all 0.3s ease; }
+        .ba-card:hover { box-shadow: 0 8px 24px rgba(255, 105, 180, 0.15); transform: translateY(-4px); }
+        .ba-header h3 { font-size: 1.1rem; font-weight: 800; margin-bottom: 0.25rem; }
+        .ba-header p { font-size: 0.85rem; color: var(--gray); margin-bottom: 1rem; }
+        .ba-container { display: flex; gap: 1rem; margin-bottom: 1rem; }
+        .ba-column { flex: 1; }
+        .ba-label { font-size: 0.75rem; font-weight: 700; text-transform: uppercase; padding: 0.25rem 0.5rem; border-radius: 4px; margin-bottom: 0.5rem; display: inline-block; }
+        .ba-before { background: #fee2e2; color: #991b1b; }
+        .ba-after { background: #d1fae5; color: #065f46; }
+        .ba-container img { width: 100%; border-radius: 8px; margin-bottom: 0.5rem; object-fit: cover; height: 250px; }
+        .ba-description { font-size: 0.8rem; color: var(--gray); }
+        .ba-stats { display: flex; gap: 1.5rem; padding-top: 1rem; border-top: 1px solid #e2e8f0; }
+        .stat { text-align: center; flex: 1; }
+        .stat-number { display: block; font-size: 1.25rem; font-weight: 800; background: var(--gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .stat-label { font-size: 0.75rem; color: var(--gray); }
+
+        /* Browser Mockup Styles */
+        .browser-mockup { background: #f1f5f9; border-radius: 8px; overflow: hidden; margin-bottom: 1rem; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+        .browser-header { background: #e2e8f0; padding: 0.75rem; display: flex; align-items: center; gap: 0.75rem; }
+        .browser-dots { display: flex; gap: 0.375rem; }
+        .dot { width: 12px; height: 12px; border-radius: 50%; }
+        .dot-red { background: #ef4444; }
+        .dot-yellow { background: #f59e0b; }
+        .dot-green { background: #10b981; }
+        .browser-url { background: var(--white); padding: 0.25rem 0.75rem; border-radius: 4px; font-size: 0.75rem; color: var(--gray); flex: 1; text-align: center; }
+        .browser-mockup img { width: 100%; display: block; height: 300px; object-fit: cover; }
+
+        .cta-section { padding: 3rem 0; background: var(--gradient); color: var(--white); text-align: center; }
+        .cta-section h2 { font-size: 1.5rem; font-weight: 800; margin-bottom: 0.75rem; }
+        .cta-section p { font-size: 0.9rem; margin-bottom: 1.5rem; opacity: 0.95; }
+        .cta-section .cta-btn { background: var(--white); color: var(--primary); }
+
+        footer { background: var(--dark); color: var(--white); padding: 2.5rem 0 1.5rem; }
+        .footer-content { display: grid; grid-template-columns: 1fr; gap: 1.5rem; margin-bottom: 1.5rem; }
+        .footer-section h3 { margin-bottom: 0.75rem; font-size: 1rem; }
+        .footer-section p { color: rgba(255,255,255,0.7); font-size: 0.8rem; line-height: 1.7; }
+        .footer-links { list-style: none; display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem; }
+        .footer-links a { color: rgba(255,255,255,0.7); text-decoration: none; font-size: 0.8rem; }
+        .social-links { display: flex; gap: 0.75rem; margin-top: 1rem; }
+        .social-link { width: 36px; height: 36px; background: rgba(255,255,255,0.1); border-radius: 8px; display: flex; align-items: center; justify-content: center; transition: all 0.3s; }
+        .social-link:hover { transform: translateY(-2px); }
+        .social-link svg { width: 18px; height: 18px; color: white; }
+
+        /* Brand-colored social icons */
+        .social-link[aria-label="Instagram"] { background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); }
+        .social-link[aria-label="Instagram"]:hover { box-shadow: 0 4px 15px rgba(220, 39, 67, 0.4); }
+        .social-link[aria-label="Facebook"] { background: #1877F2; }
+        .social-link[aria-label="Facebook"]:hover { box-shadow: 0 4px 15px rgba(24, 119, 242, 0.4); }
+        .social-link[aria-label="LinkedIn"] { background: #0A66C2; }
+        .social-link[aria-label="LinkedIn"]:hover { box-shadow: 0 4px 15px rgba(10, 102, 194, 0.4); }
+        .footer-bottom { text-align: center; padding-top: 1.5rem; border-top: 1px solid rgba(255,255,255,0.1); color: rgba(255,255,255,0.5); font-size: 0.75rem; }
+        .footer-bottom a { color: rgba(255,255,255,0.7); text-decoration: none; }
+        .legal-links { margin-top: 0.5rem; }
+        .legal-links a { margin: 0 0.5rem; }
+
+        .whatsapp-float { position: fixed; bottom: 20px; right: 20px; background: #25D366; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4); z-index: 999; }
+        .whatsapp-float svg { width: 26px; height: 26px; color: white; }
+
+        @media (min-width: 768px) {
+            .container { padding: 0 2rem; }
+            nav { padding: 1rem 0; }
+            .logo-icon { width: 40px; height: 40px; }
+            .logo-text { font-size: 1.25rem; }
+            .logo-img { height: 50px; }
+            .nav-links {
+                display: flex;
+                position: static;
+                flex-direction: row;
+                background: transparent;
+                box-shadow: none;
+                border-top: none;
+                padding: 0;
+            }
+            .nav-links li {
+                padding: 0;
+            }
+            .nav-links a {
+                padding: 0;
+            }
+            .menu-toggle {
+                display: none;
+            }
+            .cta-btn { padding: 0.75rem 1.5rem; }
+            .page-hero { padding: 4rem 0 3rem; }
+            .page-hero h1 { font-size: 2.5rem; }
+            .service-section { padding: 5rem 0; }
+            .service-content { flex-direction: row; align-items: flex-start; gap: 3rem; }
+            .service-content > div { flex: 1; }
+            .service-header h2 { font-size: 2.25rem; }
+            .process-section { padding: 2rem; }
+            .cta-section { padding: 5rem 0; }
+            .cta-section h2 { font-size: 2.5rem; }
+            .portfolio-section { padding: 5rem 0; }
+            .portfolio-grid { grid-template-columns: repeat(2, 1fr); gap: 2.5rem; }
+            .section-title { font-size: 2rem; }
+            .ba-card { padding: 2rem; }
+            .ba-container img { height: 300px; }
+            .browser-mockup img { height: 350px; }
+            footer { padding: 4rem 0 2rem; }
+            .footer-content { grid-template-columns: 2fr 1fr 1fr 1fr; gap: 3rem; }
+            .footer-links { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">
+                    <img src="assets/images/logo.png" alt="Grow Digital UK" class="logo-img">
+                </a>
+                <button class="menu-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html" class="active">Services</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <a href="contact.html" class="cta-btn">Get Started</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-hero">
+        <div class="container">
+            <h1>How We <span class="gradient-text">Help You Grow</span></h1>
+            <p>Professional digital marketing services designed for Manchester businesses</p>
+        </div>
+    </section>
+
+    <!-- Why Our Quality is Different -->
+    <section class="service-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">Our Difference</div>
+                <h2 class="section-title">Why Choose Us</h2>
+                <p class="section-subtitle">Professional digital infrastructure that drives real results</p>
+            </div>
+            <div class="portfolio-grid" style="grid-template-columns: 1fr; gap: 1.5rem;">
+                <div class="ba-card" style="text-align: left;">
+                    <div style="display: flex; align-items: start; gap: 1rem;">
+                        <div style="background: linear-gradient(135deg, rgba(255, 182, 217, 0.2) 0%, rgba(212, 255, 0, 0.2) 100%); padding: 1rem; border-radius: 12px; flex-shrink: 0;">
+                            <svg style="width: 32px; height: 32px; color: var(--primary);" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                        </div>
+                        <div style="flex: 1;">
+                            <h3 style="font-size: 1.125rem; font-weight: 700; margin-bottom: 0.5rem;">Pro-Grade Creative Tools</h3>
+                            <p style="color: var(--gray); font-size: 0.9rem; line-height: 1.6;">We use professional-grade design software and creative tools to make your brand look like a market leader, not an amateur operation.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="ba-card" style="text-align: left;">
+                    <div style="display: flex; align-items: start; gap: 1rem;">
+                        <div style="background: linear-gradient(135deg, rgba(255, 182, 217, 0.2) 0%, rgba(212, 255, 0, 0.2) 100%); padding: 1rem; border-radius: 12px; flex-shrink: 0;">
+                            <svg style="width: 32px; height: 32px; color: var(--primary);" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+                        </div>
+                        <div style="flex: 1;">
+                            <h3 style="font-size: 1.125rem; font-weight: 700; margin-bottom: 0.5rem;">Advanced Data Analytics</h3>
+                            <p style="color: var(--gray); font-size: 0.9rem; line-height: 1.6;">We analyze what your customers actually want using real data, not guesswork. Every post is optimized for maximum engagement and conversions.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="ba-card" style="text-align: left;">
+                    <div style="display: flex; align-items: start; gap: 1rem;">
+                        <div style="background: linear-gradient(135deg, rgba(255, 182, 217, 0.2) 0%, rgba(212, 255, 0, 0.2) 100%); padding: 1rem; border-radius: 12px; flex-shrink: 0;">
+                            <svg style="width: 32px; height: 32px; color: var(--primary);" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                        </div>
+                        <div style="flex: 1;">
+                            <h3 style="font-size: 1.125rem; font-weight: 700; margin-bottom: 0.5rem;">Performance-First Code</h3>
+                            <p style="color: var(--gray); font-size: 0.9rem; line-height: 1.6;">Our websites are built with clean, optimized code that loads instantly on any device. Fast sites rank higher on Google and convert better.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 2rem; padding: 1.5rem; background: linear-gradient(135deg, rgba(255, 182, 217, 0.1) 0%, rgba(212, 255, 0, 0.1) 100%); border-radius: 12px; border: 2px solid rgba(255, 182, 217, 0.2);">
+                <p style="font-size: 1.125rem; font-weight: 700; background: var(--gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">
+                    You're not just paying for posts—you're investing in professional digital infrastructure.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Media Management -->
+    <section class="service-section">
+        <div class="container">
+            <div class="service-content">
+                <div>
+                    <span class="service-badge">FREE CONSULTATION</span>
+                    <div class="service-header">
+                        <h2>Social Media Management</h2>
+                        <p>Let our expert team handle your social media while you focus on running your business. We create, post, and engage daily to grow your online presence and turn followers into customers.</p>
+                    </div>
+
+                    <h4 style="font-size: 1rem; margin-bottom: 0.5rem;">Platforms We Manage:</h4>
+                    <div class="platforms">
+                        <span class="platform-badge">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/></svg>
+                            Instagram
+                        </span>
+                        <span class="platform-badge">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                            Facebook
+                        </span>
+                        <span class="platform-badge">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                            LinkedIn
+                        </span>
+                    </div>
+
+                    <h4 style="font-size: 1rem; margin-bottom: 0.5rem;">What We Do:</h4>
+                    <ul class="features-list">
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Create 10+ professional posts per week</li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Design eye-catching graphics</li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Write engaging captions with strategic hashtags</li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Post 3-5 Instagram Stories weekly</li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Respond to all comments and DMs</li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Engage with your target audience</li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Provide detailed monthly analytics reports</li>
+                    </ul>
+
+                    <div class="disclaimer" style="margin-top: 1.5rem; padding: 1rem; background: #f8f9fa; border-radius: 8px; font-size: 0.875rem;">
+                        <p><strong>🔒 Your Security Matters:</strong> We never need your social media passwords. You simply add us as a team member through Facebook Business Suite or Instagram, giving us permission to manage content while you maintain full account control. You provide photos/videos, we create professional content, you approve before posting.</p>
+                    </div>
+
+                    <a href="pricing.html" class="cta-btn">View Pricing</a>
+                </div>
+
+                <div class="process-section">
+                    <h3>Our Process</h3>
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h4>Discovery Call</h4>
+                            <p>We learn about your business, target audience, goals, and brand voice in a 30-minute consultation.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h4>Content Strategy</h4>
+                            <p>We create a custom content plan tailored to your brand, industry, and audience preferences.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h4>First Week Approval</h4>
+                            <p>Review and approve your first week of content before we start posting - ensuring you're 100% happy.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h4>Daily Posting</h4>
+                            <p>We post consistently, engage with your audience, and grow your following every single day.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">5</div>
+                        <div class="step-content">
+                            <h4>Monthly Reviews</h4>
+                            <p>Detailed reports showing growth, engagement metrics, and results achieved each month.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Website Development -->
+    <section class="service-section">
+        <div class="container">
+            <div class="service-content">
+                <div class="process-section">
+                    <h3>Development Process</h3>
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h4>Requirements Gathering</h4>
+                            <p>We discuss your needs, target audience, brand style, and examples of websites you like.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h4>Design Mockup</h4>
+                            <p>We create a design preview showing exactly how your website will look before any development.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h4>Your Approval</h4>
+                            <p>Review the design and request any changes - we don't start development until you're happy.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h4>Development</h4>
+                            <p>We build your website with clean code, fast loading speeds, and full mobile responsiveness.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">5</div>
+                        <div class="step-content">
+                            <h4>Launch & Training</h4>
+                            <p>Your site goes live and we show you how to update basic content yourself if needed.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="service-header">
+                        <h2>Website Development</h2>
+                        <p>Modern, mobile-responsive websites designed to convert visitors into customers. We handle everything from design to launch, so you get a professional online presence without the hassle.</p>
+                    </div>
+
+                    <h4 style="font-size: 1rem; margin-bottom: 0.5rem;">What You Get:</h4>
+                    <ul class="features-list">
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Custom professional design unique to your brand</li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>5-7 pages (Home, About, Services, Contact, etc.)</li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Fully mobile responsive design</li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Fast loading speeds and SEO optimization</li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Contact forms that actually work</li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Social media integration</li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>1 year domain & hosting included</li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Free SSL certificate</li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>2 rounds of revisions included</li>
+                    </ul>
+
+                    <a href="pricing.html" class="cta-btn">View Pricing</a>
+
+                    <div class="disclaimer">
+                        <p><strong>Note:</strong> Standard £299 pricing includes first year domain (.co.uk or .com) and hosting. After first year: £25/year renewal fee. E-commerce websites, booking systems, payment integrations, custom databases, and API connections require custom quotes. Contact us to discuss your specific needs.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio / Before & After Section -->
+    <section class="portfolio-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">Our Work</div>
+                <h2 class="section-title">Proven Success Across Industries</h2>
+                <p class="section-subtitle">Real transformations from Manchester businesses</p>
+            </div>
+
+            <div class="portfolio-grid">
+                <!-- Social Media Example 1: Cafe -->
+                <div class="ba-card">
+                    <div class="ba-header">
+                        <h3>Cafe Instagram Transformation</h3>
+                        <p>Food photography that drives engagement</p>
+                    </div>
+                    <div class="ba-container">
+                        <div class="ba-column">
+                            <div class="ba-label ba-before">Before</div>
+                            <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?w=400&h=400&fit=crop&q=80" alt="Before: Amateur phone photo">
+                            <p class="ba-description">Amateur phone photo, poor lighting, no engagement</p>
+                        </div>
+                        <div class="ba-column">
+                            <div class="ba-label ba-after">After</div>
+                            <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=400&h=400&fit=crop&q=80" alt="After: Professional food photography">
+                            <p class="ba-description">Professional styling, perfect composition, 300%+ engagement</p>
+                        </div>
+                    </div>
+                    <div class="ba-stats">
+                        <div class="stat">
+                            <span class="stat-number">+320%</span>
+                            <span class="stat-label">Engagement</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">2.8K</span>
+                            <span class="stat-label">New Followers</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Social Media Example 2: Fitness -->
+                <div class="ba-card">
+                    <div class="ba-header">
+                        <h3>Fitness Brand Transformation</h3>
+                        <p>Professional content that converts</p>
+                    </div>
+                    <div class="ba-container">
+                        <div class="ba-column">
+                            <div class="ba-label ba-before">Before</div>
+                            <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=400&h=400&fit=crop&q=80" alt="Before: Basic gym photo">
+                            <p class="ba-description">Stock photos, generic captions, low reach</p>
+                        </div>
+                        <div class="ba-column">
+                            <div class="ba-label ba-after">After</div>
+                            <img src="https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=400&h=400&fit=crop&q=80" alt="After: Dynamic fitness content">
+                            <p class="ba-description">Custom photography, authentic brand voice, high engagement</p>
+                        </div>
+                    </div>
+                    <div class="ba-stats">
+                        <div class="stat">
+                            <span class="stat-number">47</span>
+                            <span class="stat-label">Enquiries/Month</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">+280%</span>
+                            <span class="stat-label">Reach</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Website Example 1: High-End Service Business -->
+                <div class="ba-card">
+                    <div class="ba-header">
+                        <h3>Professional Services Website</h3>
+                        <p>Consulting firm in Manchester</p>
+                    </div>
+                    <div class="browser-mockup">
+                        <div class="browser-header">
+                            <div class="browser-dots">
+                                <span class="dot dot-red"></span>
+                                <span class="dot dot-yellow"></span>
+                                <span class="dot dot-green"></span>
+                            </div>
+                            <div class="browser-url">example-business.co.uk</div>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?w=800&h=500&fit=crop&q=80" alt="Professional service website">
+                    </div>
+                    <div class="ba-stats">
+                        <div class="stat">
+                            <span class="stat-number">+420%</span>
+                            <span class="stat-label">Leads</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">2 weeks</span>
+                            <span class="stat-label">Delivery</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Website Example 2: Luxury Lifestyle Brand -->
+                <div class="ba-card">
+                    <div class="ba-header">
+                        <h3>E-commerce Store</h3>
+                        <p>Online store in Manchester</p>
+                    </div>
+                    <div class="browser-mockup">
+                        <div class="browser-header">
+                            <div class="browser-dots">
+                                <span class="dot dot-red"></span>
+                                <span class="dot dot-yellow"></span>
+                                <span class="dot dot-green"></span>
+                            </div>
+                            <div class="browser-url">example-store.co.uk</div>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=500&fit=crop&q=80" alt="Luxury lifestyle website">
+                    </div>
+                    <div class="ba-stats">
+                        <div class="stat">
+                            <span class="stat-number">£12K</span>
+                            <span class="stat-label">Month 1 Sales</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">38%</span>
+                            <span class="stat-label">Conversion</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 2rem;">
+                <a href="portfolio.html" class="cta-btn">View Full Portfolio</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to Get Started?</h2>
+            <p>Get your free consultation today</p>
+            <a href="contact.html" class="cta-btn">Contact Us</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Grow Digital UK</h3>
+                    <p>Professional social media management and website development. Based in Manchester.</p>
+                    <div class="social-links">
+                        <a href="https://instagram.com/igrowdigitaluk" class="social-link" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="18" cy="6" r="1"/></svg></a>
+                        <a href="https://www.facebook.com/share/1BgETdXPgi/?mibextid=wwXIfr" class="social-link" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="services.html">Social Media</a></li>
+                        <li><a href="services.html">Websites</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <ul class="footer-links">
+                        <li><a href="mailto:info@growdigitaluk.com">info@growdigitaluk.com</a></li>
+                        <li>Manchester, UK</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Grow Digital UK. All rights reserved.</p>
+                <div class="legal-links">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms & Conditions</a>
+                    <a href="cookies.html">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/447502275897?text=Hi!%20I'm%20interested%20in%20your%20services" class="whatsapp-float" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
+
+    <!-- JSON-LD Schema Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "serviceType": "Social Media Management",
+      "provider": {
+        "@type": "LocalBusiness",
+        "name": "Grow Digital UK"
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "Manchester"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "299",
+        "priceCurrency": "GBP"
+      }
+    }
+    </script>
+
+    <script>
+        // Mobile menu toggle
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        });
+
+        // Close menu when clicking on a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                menuToggle.classList.remove('active');
+                navLinks.classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>

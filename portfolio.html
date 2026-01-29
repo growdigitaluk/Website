@@ -1,0 +1,1151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="light only">
+    <title>Our Portfolio | Real Results - Grow Digital UK</title>
+    <meta name="description" content="See real results from Manchester businesses. Social media growth, website transformations, and digital marketing success stories from Grow Digital UK.">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://growdigitaluk.com/portfolio.html">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://growdigitaluk.com/portfolio.html">
+    <meta property="og:title" content="Our Portfolio | Real Results - Grow Digital UK">
+    <meta property="og:description" content="See real results from Manchester businesses. Social media growth, website transformations, and digital marketing success stories from Grow Digital UK.">
+    <meta property="og:image" content="https://growdigitaluk.com/assets/images/logo.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://growdigitaluk.com/portfolio.html">
+    <meta property="twitter:title" content="Our Portfolio | Real Results - Grow Digital UK">
+    <meta property="twitter:description" content="See real results from Manchester businesses. Social media growth, website transformations, and digital marketing success stories from Grow Digital UK.">
+    <meta property="twitter:image" content="https://growdigitaluk.com/assets/images/logo.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --primary: #FF8FC2;
+            --primary-dark: #FF6BB0;
+            --accent: #D4FF00;
+            --accent-light: #E0FF66;
+            --dark: #1a1a1a;
+            --gray: #475569;
+            --light: #FFF8F0;
+            --white: #ffffff;
+            --gradient: linear-gradient(135deg, #FF8FC2 0%, #FF6BB0 100%);
+        }
+
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Inter', sans-serif; line-height: 1.6; color: var(--dark); background-color: #ffffff; overflow-x: hidden; }
+        .container { max-width: 1140px; margin: 0 auto; padding: 0 1rem; }
+
+        header { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); box-shadow: 0 1px 3px rgba(0,0,0,0.08); position: sticky; top: 0; z-index: 1000; transition: all 0.3s ease; }
+        nav { display: flex; justify-content: space-between; align-items: center; padding: 0.875rem 0; gap: 1rem; position: relative; }
+        .logo { display: flex; align-items: center; gap: 0.5rem; text-decoration: none; }
+        .logo-img {
+            height: 40px;
+            width: auto;
+            display: block;
+        }
+        .logo-icon { width: 36px; height: 36px; background: var(--gradient); border-radius: 8px; display: none; align-items: center; justify-content: center; }
+        .logo-icon svg { width: 20px; height: 20px; color: white; }
+        .logo-text { font-size: 1.125rem; font-weight: 800; color: var(--dark); display: none; }
+        .logo-text span { color: var(--primary); }
+
+        .nav-links { display: none; gap: 2rem; list-style: none; position: absolute; top: 100%; left: 0; right: 0; background: rgba(255, 255, 255, 0.98); backdrop-filter: blur(10px); flex-direction: column; padding: 1rem 0; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-top: 1px solid #e2e8f0; }
+        .nav-links.active { display: flex; }
+        .nav-links li { padding: 0 1.5rem; }
+        .nav-links a { display: block; padding: 0.5rem 0; color: var(--dark); text-decoration: none; font-weight: 600; font-size: 0.9rem; }
+        .nav-links a:hover, .nav-links a.active { color: var(--primary); }
+
+        .menu-toggle { display: flex; flex-direction: column; gap: 4px; background: none; border: none; cursor: pointer; padding: 0.5rem; z-index: 1001; }
+        .menu-toggle span { display: block; width: 24px; height: 3px; background: var(--dark); border-radius: 2px; transition: all 0.3s ease; }
+        .menu-toggle.active span:nth-child(1) { transform: rotate(45deg) translate(6px, 6px); }
+        .menu-toggle.active span:nth-child(2) { opacity: 0; }
+        .menu-toggle.active span:nth-child(3) { transform: rotate(-45deg) translate(6px, -6px); }
+
+        .cta-btn { background: var(--gradient); color: var(--white); padding: 0.625rem 1.25rem; border-radius: 12px; text-decoration: none; font-weight: 700; font-size: 0.875rem; white-space: nowrap; display: inline-block; transition: all 0.3s ease; box-shadow: 0 6px 20px rgba(255, 105, 180, 0.5); }
+        .cta-btn:hover { transform: translateY(-2px); box-shadow: 0 8px 25px rgba(255, 105, 180, 0.4); }
+
+        .page-hero { background: linear-gradient(135deg, #FFF8F0 0%, #FFF0F5 100%); padding: 2.5rem 0 2rem; text-align: center; }
+        .page-hero h1 { font-size: 1.75rem; font-weight: 800; margin-bottom: 0.75rem; }
+        .gradient-text { background: var(--gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .page-hero p { font-size: 0.95rem; color: var(--gray); max-width: 600px; margin: 0 auto; }
+
+        .portfolio-section { padding: 3rem 0; }
+        .portfolio-section:nth-child(even) { background: #f8fafc; }
+        .section-header { text-align: center; margin-bottom: 2.5rem; }
+        .section-badge { display: inline-block; padding: 0.375rem 1rem; background: linear-gradient(135deg, rgba(255, 105, 180, 0.1) 0%, rgba(212, 255, 0, 0.1) 100%); color: var(--primary); border-radius: 50px; font-size: 0.75rem; font-weight: 700; text-transform: uppercase; margin-bottom: 0.75rem; border: 1px solid rgba(255, 105, 180, 0.2); }
+        .section-title { font-size: 1.5rem; font-weight: 800; margin-bottom: 0.5rem; }
+        .section-subtitle { color: var(--gray); font-size: 0.9rem; }
+
+        .portfolio-grid { display: grid; gap: 2rem; }
+        .ba-card { background: var(--white); border-radius: 16px; padding: 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.08); transition: all 0.3s ease; }
+        .ba-card:hover { box-shadow: 0 8px 24px rgba(255, 105, 180, 0.15); transform: translateY(-4px); }
+        .ba-header h3 { font-size: 1.1rem; font-weight: 800; margin-bottom: 0.25rem; }
+        .ba-header p { font-size: 0.85rem; color: var(--gray); margin-bottom: 1rem; }
+        .ba-container { display: flex; gap: 1rem; margin-bottom: 1rem; }
+        .ba-column { flex: 1; }
+        .ba-label { font-size: 0.75rem; font-weight: 700; text-transform: uppercase; padding: 0.25rem 0.5rem; border-radius: 4px; margin-bottom: 0.5rem; display: inline-block; }
+        .ba-before { background: #fee2e2; color: #991b1b; }
+        .ba-after { background: #d1fae5; color: #065f46; }
+        .ba-container img { width: 100%; border-radius: 8px; margin-bottom: 0.5rem; object-fit: cover; height: 250px; }
+        .ba-description { font-size: 0.8rem; color: var(--gray); }
+        .ba-stats { display: flex; gap: 1.5rem; padding-top: 1rem; border-top: 1px solid #e2e8f0; }
+        .stat { text-align: center; flex: 1; }
+        .stat-number { display: block; font-size: 1.25rem; font-weight: 800; background: var(--gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .stat-label { font-size: 0.75rem; color: var(--gray); }
+
+        .browser-mockup { background: #f8fafc; border-radius: 12px; overflow: hidden; margin-bottom: 1rem; box-shadow: 0 4px 20px rgba(0,0,0,0.12); border: 1px solid #e2e8f0; }
+        .browser-header { background: linear-gradient(180deg, #f1f5f9 0%, #e2e8f0 100%); padding: 0.6rem 0.75rem; display: flex; align-items: center; gap: 0.75rem; border-bottom: 1px solid #d1d5db; }
+        .browser-dots { display: flex; gap: 0.375rem; }
+        .dot { width: 12px; height: 12px; border-radius: 50%; }
+        .dot-red { background: #ef4444; }
+        .dot-yellow { background: #f59e0b; }
+        .dot-green { background: #10b981; }
+        .browser-url { background: var(--white); padding: 0.25rem 0.75rem; border-radius: 6px; font-size: 0.75rem; color: var(--gray); flex: 1; text-align: center; border: 1px solid #e2e8f0; }
+        .browser-mockup img { width: 100%; display: block; height: 300px; object-fit: cover; }
+
+        /* Website Template Mockup Styles */
+        .website-mockup {
+            background: #fff;
+            min-height: 320px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        /* Professional Services Website Mockup */
+        .consulting-site {
+            font-family: 'Inter', sans-serif;
+        }
+        .consulting-site .site-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.75rem 1rem;
+            background: #0f172a;
+            color: white;
+        }
+        .consulting-site .site-logo {
+            font-weight: 700;
+            font-size: 0.85rem;
+            color: white;
+        }
+        .consulting-site .site-logo span { color: #3b82f6; }
+        .consulting-site .site-menu {
+            display: flex;
+            gap: 1rem;
+            font-size: 0.65rem;
+            color: #94a3b8;
+        }
+        .consulting-site .site-hero {
+            background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+            padding: 1.5rem 1rem;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+        .consulting-site .site-hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -20%;
+            width: 200px;
+            height: 200px;
+            background: radial-gradient(circle, rgba(59, 130, 246, 0.15) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+        .consulting-site .hero-badge {
+            display: inline-block;
+            padding: 0.2rem 0.5rem;
+            background: rgba(59, 130, 246, 0.2);
+            border: 1px solid rgba(59, 130, 246, 0.3);
+            border-radius: 20px;
+            font-size: 0.55rem;
+            color: #60a5fa;
+            margin-bottom: 0.5rem;
+        }
+        .consulting-site .hero-title {
+            font-size: 1.1rem;
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 0.5rem;
+        }
+        .consulting-site .hero-title span { color: #3b82f6; }
+        .consulting-site .hero-text {
+            font-size: 0.6rem;
+            color: #94a3b8;
+            margin-bottom: 0.75rem;
+            line-height: 1.4;
+        }
+        .consulting-site .hero-btns {
+            display: flex;
+            gap: 0.5rem;
+        }
+        .consulting-site .hero-btn {
+            padding: 0.4rem 0.75rem;
+            border-radius: 6px;
+            font-size: 0.55rem;
+            font-weight: 600;
+        }
+        .consulting-site .hero-btn.primary {
+            background: #3b82f6;
+            color: white;
+        }
+        .consulting-site .hero-btn.secondary {
+            background: transparent;
+            border: 1px solid #475569;
+            color: #94a3b8;
+        }
+        .consulting-site .site-stats {
+            display: flex;
+            gap: 1rem;
+            padding: 0.75rem 1rem;
+            background: white;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        .consulting-site .stat-item {
+            text-align: center;
+            flex: 1;
+        }
+        .consulting-site .stat-num {
+            font-size: 0.9rem;
+            font-weight: 800;
+            color: #0f172a;
+        }
+        .consulting-site .stat-label {
+            font-size: 0.5rem;
+            color: #64748b;
+            text-transform: uppercase;
+        }
+        .consulting-site .site-services {
+            padding: 0.75rem 1rem;
+            background: #f8fafc;
+        }
+        .consulting-site .services-title {
+            font-size: 0.65rem;
+            font-weight: 700;
+            color: #0f172a;
+            margin-bottom: 0.5rem;
+        }
+        .consulting-site .service-cards {
+            display: flex;
+            gap: 0.5rem;
+        }
+        .consulting-site .service-card {
+            flex: 1;
+            background: white;
+            padding: 0.5rem;
+            border-radius: 6px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+        }
+        .consulting-site .service-icon {
+            width: 20px;
+            height: 20px;
+            background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+            border-radius: 4px;
+            margin-bottom: 0.25rem;
+        }
+        .consulting-site .service-name {
+            font-size: 0.55rem;
+            font-weight: 600;
+            color: #0f172a;
+        }
+
+        /* E-commerce Website Mockup */
+        .ecommerce-site {
+            font-family: 'Inter', sans-serif;
+            background: #faf7f5;
+        }
+        .ecommerce-site .site-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.6rem 1rem;
+            background: white;
+            border-bottom: 1px solid #e7e5e4;
+        }
+        .ecommerce-site .site-logo {
+            font-weight: 700;
+            font-size: 0.8rem;
+            color: #292524;
+            letter-spacing: 1px;
+        }
+        .ecommerce-site .nav-icons {
+            display: flex;
+            gap: 0.75rem;
+            font-size: 0.6rem;
+            color: #57534e;
+        }
+        .ecommerce-site .nav-icon {
+            width: 16px;
+            height: 16px;
+            background: #f5f5f4;
+            border-radius: 50%;
+        }
+        .ecommerce-site .site-banner {
+            background: #292524;
+            padding: 0.3rem;
+            text-align: center;
+            font-size: 0.5rem;
+            color: #fafaf9;
+        }
+        .ecommerce-site .site-hero {
+            position: relative;
+            height: 140px;
+            background: linear-gradient(135deg, #d6d3d1 0%, #e7e5e4 100%);
+            overflow: hidden;
+        }
+        .ecommerce-site .hero-img {
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 55%;
+            height: 100%;
+            background: url('https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=400&h=300&fit=crop') center/cover;
+        }
+        .ecommerce-site .hero-content {
+            position: absolute;
+            left: 1rem;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 45%;
+        }
+        .ecommerce-site .hero-label {
+            font-size: 0.5rem;
+            color: #78716c;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 0.25rem;
+        }
+        .ecommerce-site .hero-title {
+            font-size: 0.95rem;
+            font-weight: 700;
+            color: #292524;
+            line-height: 1.2;
+            margin-bottom: 0.5rem;
+        }
+        .ecommerce-site .hero-btn {
+            display: inline-block;
+            padding: 0.35rem 0.75rem;
+            background: #292524;
+            color: white;
+            font-size: 0.5rem;
+            font-weight: 600;
+            border-radius: 2px;
+        }
+        .ecommerce-site .product-section {
+            padding: 0.75rem 1rem;
+            background: white;
+        }
+        .ecommerce-site .section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 0.5rem;
+        }
+        .ecommerce-site .section-title {
+            font-size: 0.7rem;
+            font-weight: 700;
+            color: #292524;
+        }
+        .ecommerce-site .view-all {
+            font-size: 0.5rem;
+            color: #78716c;
+        }
+        .ecommerce-site .product-grid {
+            display: flex;
+            gap: 0.5rem;
+        }
+        .ecommerce-site .product-card {
+            flex: 1;
+            background: #fafaf9;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+        .ecommerce-site .product-img {
+            height: 50px;
+            background-size: cover;
+            background-position: center;
+        }
+        .ecommerce-site .product-img.img1 { background-image: url('https://images.unsplash.com/photo-1567016432779-094069958ea5?w=200&h=150&fit=crop'); }
+        .ecommerce-site .product-img.img2 { background-image: url('https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=200&h=150&fit=crop'); }
+        .ecommerce-site .product-img.img3 { background-image: url('https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?w=200&h=150&fit=crop'); }
+        .ecommerce-site .product-info {
+            padding: 0.35rem;
+        }
+        .ecommerce-site .product-name {
+            font-size: 0.5rem;
+            font-weight: 600;
+            color: #292524;
+            margin-bottom: 0.15rem;
+        }
+        .ecommerce-site .product-price {
+            font-size: 0.55rem;
+            font-weight: 700;
+            color: #292524;
+        }
+
+        /* Restaurant Website Mockup */
+        .restaurant-site {
+            font-family: 'Inter', sans-serif;
+            background: #0c0a09;
+            color: white;
+        }
+        .restaurant-site .site-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.6rem 1rem;
+            background: transparent;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 10;
+        }
+        .restaurant-site .site-logo {
+            font-weight: 700;
+            font-size: 0.75rem;
+            color: white;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+        .restaurant-site .site-menu {
+            display: flex;
+            gap: 0.75rem;
+            font-size: 0.55rem;
+            color: rgba(255,255,255,0.7);
+        }
+        .restaurant-site .reserve-btn {
+            padding: 0.3rem 0.6rem;
+            background: #c2410c;
+            border-radius: 2px;
+            font-size: 0.5rem;
+            font-weight: 600;
+            color: white;
+        }
+        .restaurant-site .site-hero {
+            position: relative;
+            height: 180px;
+            background: url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&h=400&fit=crop') center/cover;
+        }
+        .restaurant-site .hero-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to right, rgba(12,10,9,0.9) 0%, rgba(12,10,9,0.4) 100%);
+        }
+        .restaurant-site .hero-content {
+            position: absolute;
+            left: 1rem;
+            bottom: 1rem;
+            z-index: 5;
+        }
+        .restaurant-site .hero-label {
+            font-size: 0.5rem;
+            color: #c2410c;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 0.25rem;
+        }
+        .restaurant-site .hero-title {
+            font-size: 1.2rem;
+            font-weight: 700;
+            line-height: 1.1;
+            margin-bottom: 0.25rem;
+        }
+        .restaurant-site .hero-subtitle {
+            font-size: 0.55rem;
+            color: rgba(255,255,255,0.6);
+            margin-bottom: 0.5rem;
+        }
+        .restaurant-site .hero-btns {
+            display: flex;
+            gap: 0.5rem;
+        }
+        .restaurant-site .hero-btn {
+            padding: 0.35rem 0.7rem;
+            font-size: 0.5rem;
+            font-weight: 600;
+            border-radius: 2px;
+        }
+        .restaurant-site .hero-btn.primary {
+            background: #c2410c;
+            color: white;
+        }
+        .restaurant-site .hero-btn.secondary {
+            background: transparent;
+            border: 1px solid rgba(255,255,255,0.3);
+            color: white;
+        }
+        .restaurant-site .info-bar {
+            display: flex;
+            background: #1c1917;
+            border-top: 1px solid #292524;
+        }
+        .restaurant-site .info-item {
+            flex: 1;
+            padding: 0.5rem;
+            text-align: center;
+            border-right: 1px solid #292524;
+        }
+        .restaurant-site .info-item:last-child { border-right: none; }
+        .restaurant-site .info-icon {
+            width: 16px;
+            height: 16px;
+            background: #c2410c;
+            border-radius: 50%;
+            margin: 0 auto 0.2rem;
+        }
+        .restaurant-site .info-label {
+            font-size: 0.45rem;
+            color: rgba(255,255,255,0.5);
+            text-transform: uppercase;
+        }
+        .restaurant-site .info-value {
+            font-size: 0.55rem;
+            font-weight: 600;
+        }
+        .restaurant-site .menu-preview {
+            padding: 0.6rem 1rem;
+            background: #0c0a09;
+        }
+        .restaurant-site .menu-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 0.4rem;
+        }
+        .restaurant-site .menu-title {
+            font-size: 0.6rem;
+            font-weight: 700;
+        }
+        .restaurant-site .menu-link {
+            font-size: 0.45rem;
+            color: #c2410c;
+        }
+        .restaurant-site .menu-items {
+            display: flex;
+            gap: 0.5rem;
+        }
+        .restaurant-site .menu-item {
+            flex: 1;
+            background: #1c1917;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+        .restaurant-site .menu-img {
+            height: 35px;
+            background-size: cover;
+            background-position: center;
+        }
+        .restaurant-site .menu-img.dish1 { background-image: url('https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=200&h=150&fit=crop'); }
+        .restaurant-site .menu-img.dish2 { background-image: url('https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=200&h=150&fit=crop'); }
+        .restaurant-site .menu-img.dish3 { background-image: url('https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=200&h=150&fit=crop'); }
+        .restaurant-site .menu-info {
+            padding: 0.25rem 0.35rem;
+        }
+        .restaurant-site .dish-name {
+            font-size: 0.5rem;
+            font-weight: 600;
+        }
+        .restaurant-site .dish-price {
+            font-size: 0.45rem;
+            color: #c2410c;
+        }
+
+        .cta-section { padding: 3rem 0; background: var(--gradient); color: var(--white); text-align: center; }
+        .cta-section h2 { font-size: 1.5rem; font-weight: 800; margin-bottom: 0.75rem; }
+        .cta-section p { font-size: 0.9rem; margin-bottom: 1.5rem; opacity: 0.95; }
+        .cta-section .cta-btn { background: var(--white); color: var(--primary); }
+
+        footer { background: var(--dark); color: var(--white); padding: 2.5rem 0 1.5rem; }
+        .footer-content { display: grid; grid-template-columns: 1fr; gap: 1.5rem; margin-bottom: 1.5rem; }
+        .footer-section h3 { margin-bottom: 0.75rem; font-size: 1rem; }
+        .footer-section p { color: rgba(255,255,255,0.7); font-size: 0.8rem; line-height: 1.7; }
+        .footer-links { list-style: none; display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem; }
+        .footer-links a { color: rgba(255,255,255,0.7); text-decoration: none; font-size: 0.8rem; }
+        .social-links { display: flex; gap: 0.75rem; margin-top: 1rem; }
+        .social-link { width: 36px; height: 36px; background: rgba(255,255,255,0.1); border-radius: 8px; display: flex; align-items: center; justify-content: center; transition: all 0.3s; }
+        .social-link:hover { transform: translateY(-2px); }
+        .social-link svg { width: 18px; height: 18px; color: white; }
+        .social-link[aria-label="Instagram"] { background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); }
+        .social-link[aria-label="Instagram"]:hover { box-shadow: 0 4px 15px rgba(220, 39, 67, 0.4); }
+        .social-link[aria-label="Facebook"] { background: #1877F2; }
+        .social-link[aria-label="Facebook"]:hover { box-shadow: 0 4px 15px rgba(24, 119, 242, 0.4); }
+        .footer-bottom { text-align: center; padding-top: 1.5rem; border-top: 1px solid rgba(255,255,255,0.1); color: rgba(255,255,255,0.5); font-size: 0.75rem; }
+        .footer-bottom a { color: rgba(255,255,255,0.7); text-decoration: none; }
+        .legal-links { margin-top: 0.5rem; }
+        .legal-links a { margin: 0 0.5rem; }
+
+        .whatsapp-float { position: fixed; bottom: 20px; right: 20px; background: #25D366; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4); z-index: 999; }
+        .whatsapp-float svg { width: 26px; height: 26px; color: white; }
+
+        @media (min-width: 768px) {
+            .container { padding: 0 2rem; }
+            nav { padding: 1rem 0; }
+            .logo-icon { width: 40px; height: 40px; }
+            .logo-text { font-size: 1.25rem; }
+            .logo-img { height: 50px; }
+            .nav-links { display: flex; position: static; flex-direction: row; background: transparent; box-shadow: none; border-top: none; padding: 0; }
+            .nav-links li { padding: 0; }
+            .nav-links a { padding: 0; }
+            .menu-toggle { display: none; }
+            .cta-btn { padding: 0.75rem 1.5rem; }
+            .page-hero { padding: 4rem 0 3rem; }
+            .page-hero h1 { font-size: 2.5rem; }
+            .portfolio-section { padding: 5rem 0; }
+            .portfolio-grid { grid-template-columns: repeat(2, 1fr); gap: 2.5rem; }
+            .section-title { font-size: 2rem; }
+            .ba-card { padding: 2rem; }
+            .ba-container img { height: 300px; }
+            .browser-mockup img { height: 350px; }
+            .cta-section { padding: 5rem 0; }
+            .cta-section h2 { font-size: 2.5rem; }
+            footer { padding: 4rem 0 2rem; }
+            .footer-content { grid-template-columns: 2fr 1fr 1fr 1fr; gap: 3rem; }
+            .footer-links { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">
+                    <img src="assets/images/logo.png" alt="Grow Digital UK" class="logo-img">
+                </a>
+                <button class="menu-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="portfolio.html" class="active">Portfolio</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <a href="contact.html" class="cta-btn">Get Started</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-hero">
+        <h1>Our <span class="gradient-text">Portfolio</span></h1>
+        <p>Real transformations from Manchester businesses we've helped grow online</p>
+    </section>
+
+    <!-- Social Media Portfolio -->
+    <section class="portfolio-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">Social Media</div>
+                <h2 class="section-title">Instagram Transformations</h2>
+                <p class="section-subtitle">Professional content that drives engagement and grows your following</p>
+            </div>
+
+            <div class="portfolio-grid">
+                <!-- Cafe -->
+                <div class="ba-card">
+                    <div class="ba-header">
+                        <h3>Independent Cafe</h3>
+                        <p>Cafe in Manchester</p>
+                    </div>
+                    <div class="ba-container">
+                        <div class="ba-column">
+                            <div class="ba-label ba-before">Before</div>
+                            <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?w=400&h=400&fit=crop&q=80" alt="Before: Amateur food photo">
+                            <p class="ba-description">Dark, amateur phone photos with poor composition</p>
+                        </div>
+                        <div class="ba-column">
+                            <div class="ba-label ba-after">After</div>
+                            <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=400&h=400&fit=crop&q=80" alt="After: Professional food styling">
+                            <p class="ba-description">Professional food photography with perfect lighting</p>
+                        </div>
+                    </div>
+                    <div class="ba-stats">
+                        <div class="stat">
+                            <span class="stat-number">200 → 2,800</span>
+                            <span class="stat-label">Followers</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">+320%</span>
+                            <span class="stat-label">Engagement</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">4 months</span>
+                            <span class="stat-label">Time Frame</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gym -->
+                <div class="ba-card">
+                    <div class="ba-header">
+                        <h3>Fitness Center</h3>
+                        <p>Gym in Manchester</p>
+                    </div>
+                    <div class="ba-container">
+                        <div class="ba-column">
+                            <div class="ba-label ba-before">Before</div>
+                            <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=400&h=400&fit=crop&q=80" alt="Before: Basic gym photo">
+                            <p class="ba-description">Generic stock photos, no brand personality</p>
+                        </div>
+                        <div class="ba-column">
+                            <div class="ba-label ba-after">After</div>
+                            <img src="https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=400&h=400&fit=crop&q=80" alt="After: Dynamic action shots">
+                            <p class="ba-description">High-energy content showing real members</p>
+                        </div>
+                    </div>
+                    <div class="ba-stats">
+                        <div class="stat">
+                            <span class="stat-number">47</span>
+                            <span class="stat-label">Enquiries/Month</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">+280%</span>
+                            <span class="stat-label">Engagement</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">23</span>
+                            <span class="stat-label">New Members</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Barber -->
+                <div class="ba-card">
+                    <div class="ba-header">
+                        <h3>Traditional Barbershop</h3>
+                        <p>Barbers in Manchester</p>
+                    </div>
+                    <div class="ba-container">
+                        <div class="ba-column">
+                            <div class="ba-label ba-before">Before</div>
+                            <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=400&h=400&fit=crop&q=80" alt="Before: Basic barber photo">
+                            <p class="ba-description">Inconsistent posting, no clear brand aesthetic</p>
+                        </div>
+                        <div class="ba-column">
+                            <div class="ba-label ba-after">After</div>
+                            <img src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?w=400&h=400&fit=crop&q=80" alt="After: Professional before/after cuts">
+                            <p class="ba-description">Daily before/after shots showcasing expert cuts</p>
+                        </div>
+                    </div>
+                    <div class="ba-stats">
+                        <div class="stat">
+                            <span class="stat-number">500 → 3,200</span>
+                            <span class="stat-label">Followers</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">+400%</span>
+                            <span class="stat-label">Engagement</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">+65%</span>
+                            <span class="stat-label">Walk-ins</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Beauty Salon -->
+                <div class="ba-card">
+                    <div class="ba-header">
+                        <h3>Glow Beauty Studio</h3>
+                        <p>Premium beauty salon in Stockport</p>
+                    </div>
+                    <div class="ba-container">
+                        <div class="ba-column">
+                            <div class="ba-label ba-before">Before</div>
+                            <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=400&h=400&fit=crop&q=80" alt="Before: Basic beauty photo">
+                            <p class="ba-description">Low-quality selfies, irregular posting schedule</p>
+                        </div>
+                        <div class="ba-column">
+                            <div class="ba-label ba-after">After</div>
+                            <img src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=400&h=400&fit=crop&q=80" alt="After: Professional beauty content">
+                            <p class="ba-description">Stunning transformations with professional lighting</p>
+                        </div>
+                    </div>
+                    <div class="ba-stats">
+                        <div class="stat">
+                            <span class="stat-number">850 → 4,100</span>
+                            <span class="stat-label">Followers</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">62</span>
+                            <span class="stat-label">Bookings/Month</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">+350%</span>
+                            <span class="stat-label">Engagement</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Website Portfolio -->
+    <section class="portfolio-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">Websites</div>
+                <h2 class="section-title">Professional Website Design</h2>
+                <p class="section-subtitle">Modern, responsive websites that convert visitors into customers</p>
+            </div>
+
+            <div class="portfolio-grid">
+                <!-- High-End Service Business -->
+                <div class="ba-card">
+                    <div class="ba-header">
+                        <h3>Professional Services Firm</h3>
+                        <p>Consulting business in Manchester</p>
+                    </div>
+                    <div class="browser-mockup">
+                        <div class="browser-header">
+                            <div class="browser-dots">
+                                <span class="dot dot-red"></span>
+                                <span class="dot dot-yellow"></span>
+                                <span class="dot dot-green"></span>
+                            </div>
+                            <div class="browser-url">stratfordconsulting.co.uk</div>
+                        </div>
+                        <div class="website-mockup consulting-site">
+                            <div class="site-nav">
+                                <div class="site-logo">Stratford<span>Consulting</span></div>
+                                <div class="site-menu">
+                                    <span>Services</span>
+                                    <span>About</span>
+                                    <span>Case Studies</span>
+                                    <span>Contact</span>
+                                </div>
+                            </div>
+                            <div class="site-hero">
+                                <div class="hero-badge">Manchester's #1 Business Consultancy</div>
+                                <div class="hero-title">Transform Your <span>Business</span> Strategy</div>
+                                <div class="hero-text">Expert consulting services to help SMEs scale efficiently. From operations to digital transformation.</div>
+                                <div class="hero-btns">
+                                    <div class="hero-btn primary">Book Free Consultation</div>
+                                    <div class="hero-btn secondary">View Case Studies</div>
+                                </div>
+                            </div>
+                            <div class="site-stats">
+                                <div class="stat-item">
+                                    <div class="stat-num">250+</div>
+                                    <div class="stat-label">Clients</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-num">£48M</div>
+                                    <div class="stat-label">Revenue Generated</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-num">15+</div>
+                                    <div class="stat-label">Years Experience</div>
+                                </div>
+                            </div>
+                            <div class="site-services">
+                                <div class="services-title">Our Services</div>
+                                <div class="service-cards">
+                                    <div class="service-card">
+                                        <div class="service-icon"></div>
+                                        <div class="service-name">Strategy</div>
+                                    </div>
+                                    <div class="service-card">
+                                        <div class="service-icon"></div>
+                                        <div class="service-name">Operations</div>
+                                    </div>
+                                    <div class="service-card">
+                                        <div class="service-icon"></div>
+                                        <div class="service-name">Digital</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ba-stats">
+                        <div class="stat">
+                            <span class="stat-number">+420%</span>
+                            <span class="stat-label">Lead Generation</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">2 weeks</span>
+                            <span class="stat-label">Delivery Time</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">85%</span>
+                            <span class="stat-label">Mobile Traffic</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Luxury Lifestyle Brand -->
+                <div class="ba-card">
+                    <div class="ba-header">
+                        <h3>Home Decor E-commerce</h3>
+                        <p>Online store in Manchester</p>
+                    </div>
+                    <div class="browser-mockup">
+                        <div class="browser-header">
+                            <div class="browser-dots">
+                                <span class="dot dot-red"></span>
+                                <span class="dot dot-yellow"></span>
+                                <span class="dot dot-green"></span>
+                            </div>
+                            <div class="browser-url">haveninteriors.co.uk</div>
+                        </div>
+                        <div class="website-mockup ecommerce-site">
+                            <div class="site-banner">FREE UK DELIVERY ON ORDERS OVER £75</div>
+                            <div class="site-nav">
+                                <div class="site-logo">HAVEN</div>
+                                <div class="nav-icons">
+                                    <span>Shop</span>
+                                    <span>Collections</span>
+                                    <span>Sale</span>
+                                    <div class="nav-icon"></div>
+                                    <div class="nav-icon"></div>
+                                </div>
+                            </div>
+                            <div class="site-hero">
+                                <div class="hero-img"></div>
+                                <div class="hero-content">
+                                    <div class="hero-label">New Collection</div>
+                                    <div class="hero-title">Elevate Your Living Space</div>
+                                    <div class="hero-btn">Shop Now →</div>
+                                </div>
+                            </div>
+                            <div class="product-section">
+                                <div class="section-header">
+                                    <div class="section-title">Bestsellers</div>
+                                    <div class="view-all">View All →</div>
+                                </div>
+                                <div class="product-grid">
+                                    <div class="product-card">
+                                        <div class="product-img img1"></div>
+                                        <div class="product-info">
+                                            <div class="product-name">Velvet Armchair</div>
+                                            <div class="product-price">£349</div>
+                                        </div>
+                                    </div>
+                                    <div class="product-card">
+                                        <div class="product-img img2"></div>
+                                        <div class="product-info">
+                                            <div class="product-name">Cloud Sofa</div>
+                                            <div class="product-price">£1,299</div>
+                                        </div>
+                                    </div>
+                                    <div class="product-card">
+                                        <div class="product-img img3"></div>
+                                        <div class="product-info">
+                                            <div class="product-name">Accent Chair</div>
+                                            <div class="product-price">£449</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ba-stats">
+                        <div class="stat">
+                            <span class="stat-number">£12K</span>
+                            <span class="stat-label">Month 1 Sales</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">38%</span>
+                            <span class="stat-label">Conversion Rate</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">+180%</span>
+                            <span class="stat-label">Traffic Growth</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Restaurant Website -->
+                <div class="ba-card">
+                    <div class="ba-header">
+                        <h3>Contemporary Restaurant</h3>
+                        <p>Restaurant in Manchester</p>
+                    </div>
+                    <div class="browser-mockup">
+                        <div class="browser-header">
+                            <div class="browser-dots">
+                                <span class="dot dot-red"></span>
+                                <span class="dot dot-yellow"></span>
+                                <span class="dot dot-green"></span>
+                            </div>
+                            <div class="browser-url">emberkitchen.co.uk</div>
+                        </div>
+                        <div class="website-mockup restaurant-site">
+                            <div class="site-nav">
+                                <div class="site-logo">Ember</div>
+                                <div class="site-menu">
+                                    <span>Menu</span>
+                                    <span>About</span>
+                                    <span>Gallery</span>
+                                </div>
+                                <div class="reserve-btn">Reserve Table</div>
+                            </div>
+                            <div class="site-hero">
+                                <div class="hero-overlay"></div>
+                                <div class="hero-content">
+                                    <div class="hero-label">Modern British Cuisine</div>
+                                    <div class="hero-title">Fire-Crafted<br>Excellence</div>
+                                    <div class="hero-subtitle">Experience the art of open-flame cooking in the heart of Manchester</div>
+                                    <div class="hero-btns">
+                                        <div class="hero-btn primary">Book a Table</div>
+                                        <div class="hero-btn secondary">View Menu</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="info-bar">
+                                <div class="info-item">
+                                    <div class="info-icon"></div>
+                                    <div class="info-label">Location</div>
+                                    <div class="info-value">Deansgate</div>
+                                </div>
+                                <div class="info-item">
+                                    <div class="info-icon"></div>
+                                    <div class="info-label">Hours</div>
+                                    <div class="info-value">5pm - 11pm</div>
+                                </div>
+                                <div class="info-item">
+                                    <div class="info-icon"></div>
+                                    <div class="info-label">Phone</div>
+                                    <div class="info-value">0161 xxx xxxx</div>
+                                </div>
+                            </div>
+                            <div class="menu-preview">
+                                <div class="menu-header">
+                                    <div class="menu-title">Featured Dishes</div>
+                                    <div class="menu-link">Full Menu →</div>
+                                </div>
+                                <div class="menu-items">
+                                    <div class="menu-item">
+                                        <div class="menu-img dish1"></div>
+                                        <div class="menu-info">
+                                            <div class="dish-name">Seasonal Salad</div>
+                                            <div class="dish-price">£14</div>
+                                        </div>
+                                    </div>
+                                    <div class="menu-item">
+                                        <div class="menu-img dish2"></div>
+                                        <div class="menu-info">
+                                            <div class="dish-name">Wood-Fired Pizza</div>
+                                            <div class="dish-price">£18</div>
+                                        </div>
+                                    </div>
+                                    <div class="menu-item">
+                                        <div class="menu-img dish3"></div>
+                                        <div class="menu-info">
+                                            <div class="dish-name">Garden Bowl</div>
+                                            <div class="dish-price">£16</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ba-stats">
+                        <div class="stat">
+                            <span class="stat-number">+520%</span>
+                            <span class="stat-label">Online Bookings</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">10 days</span>
+                            <span class="stat-label">Delivery Time</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">92%</span>
+                            <span class="stat-label">Mobile Users</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to Transform Your Brand?</h2>
+            <p>Join Manchester businesses seeing real results from professional digital marketing</p>
+            <a href="contact.html" class="cta-btn">Get Free Consultation</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Grow Digital UK</h3>
+                    <p>Professional social media management and website development. Based in Manchester.</p>
+                    <div class="social-links">
+                        <a href="https://instagram.com/igrowdigitaluk" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="18" cy="6" r="1"/></svg></a>
+                        <a href="https://www.facebook.com/share/1BgETdXPgi/?mibextid=wwXIfr" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="services.html">Social Media</a></li>
+                        <li><a href="services.html">Website Development</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>Email: info@growdigitaluk.com</p>
+                    <p>Manchester, UK</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Grow Digital UK. All rights reserved.</p>
+                <div class="legal-links">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms & Conditions</a>
+                    <a href="cookies.html">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/447502275897?text=Hi!%20I'm%20interested%20in%20your%20services" class="whatsapp-float" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
+
+    <script>
+        // Mobile menu toggle
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        });
+
+        // Close menu when clicking on a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                menuToggle.classList.remove('active');
+                navLinks.classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>

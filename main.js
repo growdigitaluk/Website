@@ -102,7 +102,7 @@ function initWhatsApp() {
   var wa = document.querySelector('.wa-float');
   if (!wa) return;
 
-  var selector = '.btn, button:not(.wa-float), input:not([type="hidden"]), select, textarea, summary, .nav-toggle';
+  var selector = '.btn, button:not(.wa-float), input:not([type="hidden"]), select, textarea, summary, .nav-toggle, .service-picker a, a.card';
   var ticking = false;
 
   function overlaps(a, b) {

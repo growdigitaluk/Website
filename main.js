@@ -4,10 +4,15 @@
 
 document.documentElement.classList.add('js');
 
+var reducedMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
 document.addEventListener('DOMContentLoaded', function () {
   try {
     initNav();
+    initHeader();
     initReveal();
+    initSlideshow();
+    initCountUp();
     initWhatsApp();
     initForms();
   } catch (err) {
@@ -63,14 +68,23 @@ function initNav() {
   else if (desktop.addListener) desktop.addListener(onChange);
 }
 
+/* ---------- Header: solid with a soft shadow once the page scrolls ---------- */
+
+function initHeader() {
+  var header = document.querySelector('.site-header');
+  if (!header) return;
+  var update = function () { header.classList.toggle('is-scrolled', window.scrollY > 8); };
+  window.addEventListener('scroll', update, { passive: true });
+  update();
+}
+
 /* ---------- Scroll reveal (optional, respects reduced motion) ---------- */
 
 function initReveal() {
   var items = document.querySelectorAll('.reveal');
   if (!items.length) return;
 
-  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  if (reduce || !('IntersectionObserver' in window)) return; // content simply stays visible
+  if (reducedMotion || !('IntersectionObserver' in window)) return; // content simply stays visible
 
   var observer = new IntersectionObserver(function (entries) {
     entries.forEach(function (entry) {
@@ -96,13 +110,76 @@ function initReveal() {
   }, 4000);
 }
 
+/* ---------- Hero slideshow: crossfade the laptop and phone together every 4 seconds ---------- */
+
+function initSlideshow() {
+  var shows = document.querySelectorAll('[data-slideshow]');
+  if (!shows.length || reducedMotion) return; // first slide simply stays on screen
+
+  shows.forEach(function (show) {
+    var groups = show.querySelectorAll('.slides');
+    var count = groups[0].children.length;
+    var index = 0;
+    var onScreen = true;
+
+    if ('IntersectionObserver' in window) {
+      new IntersectionObserver(function (entries) {
+        onScreen = entries[0].isIntersecting;
+      }).observe(show);
+    }
+
+    setInterval(function () {
+      if (!onScreen || document.hidden) return;
+      var next = (index + 1) % count;
+      groups.forEach(function (group) {
+        var current = group.children[index];
+        current.classList.remove('is-active');
+        current.classList.add('is-leaving');
+        setTimeout(function () { current.classList.remove('is-leaving'); }, 950);
+        group.children[next].classList.add('is-active');
+      });
+      index = next;
+    }, 4000);
+  });
+}
+
+/* ---------- Count prices up once when they scroll into view ---------- */
+
+function initCountUp() {
+  var els = document.querySelectorAll('[data-count]');
+  if (!els.length || reducedMotion || !('IntersectionObserver' in window)) return;
+
+  var observer = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      if (!entry.isIntersecting) return;
+      observer.unobserve(entry.target);
+      var el = entry.target;
+      var end = parseInt(el.getAttribute('data-count'), 10);
+      var start = null;
+      // The real number is already in the page; it's only replaced once animation frames run.
+      function step(time) {
+        if (start === null) start = time;
+        var progress = Math.min((time - start) / 1200, 1);
+        var eased = 1 - Math.pow(1 - progress, 3);
+        el.textContent = progress < 1 ? Math.round(end * eased) : end;
+        if (progress < 1) window.requestAnimationFrame(step);
+      }
+      window.requestAnimationFrame(step);
+      // Safety net: always end on the real price, even if animation frames are paused.
+      setTimeout(function () { el.textContent = end; }, 1500);
+    });
+  }, { threshold: 0.6 });
+
+  els.forEach(function (el) { observer.observe(el); });
+}
+
 /* ---------- WhatsApp button: hide when it would cover a button or form field ---------- */
 
 function initWhatsApp() {
   var wa = document.querySelector('.wa-float');
   if (!wa) return;
 
-  var selector = '.btn, button:not(.wa-float), input:not([type="hidden"]), select, textarea, summary, .nav-toggle, .service-picker a, a.card';
+  var selector = '.btn, button:not(.wa-float), input:not([type="hidden"]), select, textarea, summary, .nav-toggle, .service-picker a, a.card, .concept-tile';
   var ticking = false;
 
   function overlaps(a, b) {

@@ -21,9 +21,10 @@
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://images.unsplash.com">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap">
-  <link rel="stylesheet" href="styles.css?v=4">
-  <script src="main.js?v=4"></script>
+  <link rel="stylesheet" href="styles.css?v=5">
+  <script src="main.js?v=5"></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -50,14 +51,19 @@
   </header>
 
   <main id="main">
-    <section class="page-hero" aria-labelledby="page-title">
+    <section class="page-hero has-photo" aria-labelledby="page-title">
       <div class="container">
-        <p class="eyebrow">Websites</p>
-        <h1 id="page-title">Website design for UK small businesses</h1>
-        <p class="lead">Clear, fast, mobile-friendly websites that explain what you do and make it easy for customers to contact you. Fixed prices, written quotes, and your domain registered in your name.</p>
-        <div class="btn-row">
-          <a class="btn btn-primary" href="contact.html">Book a free 20-minute call</a>
-          <a class="btn btn-secondary" href="#packages">See website packages</a>
+        <div>
+          <p class="eyebrow">Websites</p>
+          <h1 id="page-title">Website design for UK small businesses</h1>
+          <p class="lead">Clear, fast, mobile-friendly websites that explain what you do and make it easy for customers to contact you. Fixed prices, written quotes, and your domain registered in your name.</p>
+          <div class="btn-row">
+            <a class="btn btn-primary" href="contact.html">Book a free 20-minute call</a>
+            <a class="btn btn-secondary" href="#packages">See website packages</a>
+          </div>
+        </div>
+        <div class="hero-photo">
+          <img src="https://images.unsplash.com/photo-1555960840-f536ae1e4e95?w=1200&amp;q=75&amp;auto=format&amp;fit=crop" srcset="https://images.unsplash.com/photo-1555960840-f536ae1e4e95?w=700&amp;q=75&amp;auto=format&amp;fit=crop 700w, https://images.unsplash.com/photo-1555960840-f536ae1e4e95?w=1200&amp;q=75&amp;auto=format&amp;fit=crop 1200w" sizes="(min-width: 900px) 46vw, 100vw" width="1200" height="900" loading="lazy" decoding="async" alt="Laptop on a desk showing a photo-editing app, with headphones and a phone beside it">
         </div>
       </div>
     </section>
@@ -65,7 +71,7 @@
     <!-- What's included -->
     <section class="section" aria-labelledby="included-title">
       <div class="container">
-        <div class="section-head">
+        <div class="section-head reveal">
           <p class="eyebrow">What's included</p>
           <h2 id="included-title">Every website comes with the basics done properly</h2>
           <p>Whichever package you choose, these come as standard.</p>
@@ -101,9 +107,27 @@
     </section>
 
     <!-- Packages -->
-    <section class="section section-white" id="packages" aria-labelledby="packages-title">
+    <section class="section section-white" aria-labelledby="websites-media-title">
+      <div class="container media-split">
+        <div class="media-photo reveal">
+          <img src="https://images.unsplash.com/photo-1552572748-cb23c32145e6?w=1200&amp;q=75&amp;auto=format&amp;fit=crop" srcset="https://images.unsplash.com/photo-1552572748-cb23c32145e6?w=700&amp;q=75&amp;auto=format&amp;fit=crop 700w, https://images.unsplash.com/photo-1552572748-cb23c32145e6?w=1200&amp;q=75&amp;auto=format&amp;fit=crop 1200w" sizes="(min-width: 900px) 50vw, 100vw" width="1200" height="900" loading="lazy" decoding="async" alt="Smartphone with apps on screen resting against an open laptop">
+        </div>
+        <div class="reveal">
+          <p class="eyebrow">Every screen</p>
+          <h2 id="websites-media-title">Designed for phones first</h2>
+          <p>Most visitors will see your website on a phone, so that's where we start. Every page is then checked on tablets and laptops before launch.</p>
+          <ul class="check-list">
+            <li>Buttons and text sized for thumbs, not mice</li>
+            <li>Click-to-call and directions links where they help</li>
+            <li>Images compressed so pages load quickly on mobile data</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="packages" aria-labelledby="packages-title">
       <div class="container">
-        <div class="section-head">
+        <div class="section-head reveal">
           <p class="eyebrow">Website packages</p>
           <h2 id="packages-title">Three packages, fixed prices</h2>
           <p>One-off prices. You'll get a written quote confirming exactly what's included before any work starts.</p>
@@ -156,16 +180,15 @@
 
         <div class="callout after-grid">
           <p><strong>Domain name:</strong> charged at cost (about £5–15 a year), paid by you and registered in your name — so it always belongs to you.</p>
-          <p><strong>Founding client offer:</strong> 15% off any website package for our first 10 clients, in exchange for an honest review once the work is done. <a href="pricing.html">See all prices</a>.</p>
         </div>
         <p class="note after-grid">Prices exclude ad spend and third-party subscriptions.</p>
       </div>
     </section>
 
     <!-- Care plans -->
-    <section class="section" aria-labelledby="care-title">
+    <section class="section section-white" aria-labelledby="care-title">
       <div class="container">
-        <div class="section-head">
+        <div class="section-head reveal">
           <p class="eyebrow">Website care plans</p>
           <h2 id="care-title">Hosting, backups and edits, sorted</h2>
           <p>Optional monthly plans that keep your website online, safe and up to date. Cancel anytime with 30 days' notice.</p>
@@ -202,9 +225,9 @@
     </section>
 
     <!-- Process -->
-    <section class="section section-white" aria-labelledby="process-title">
+    <section class="section" aria-labelledby="process-title">
       <div class="container">
-        <div class="section-head">
+        <div class="section-head reveal">
           <p class="eyebrow">How it works</p>
           <h2 id="process-title">From first call to launch</h2>
         </div>
@@ -235,9 +258,9 @@
     </section>
 
     <!-- FAQ -->
-    <section class="section" aria-labelledby="faq-title">
+    <section class="section section-white" aria-labelledby="faq-title">
       <div class="container">
-        <div class="section-head">
+        <div class="section-head reveal">
           <p class="eyebrow">FAQ</p>
           <h2 id="faq-title">Website questions</h2>
         </div>
@@ -302,7 +325,7 @@
         <div>
           <a class="logo" href="index.html" aria-label="Grow Digital home"><span class="logo-mark" aria-hidden="true">G</span>Grow Digital</a>
           <p>Websites, AI onboarding and social media for small businesses across the UK.</p>
-          <p>A small UK team — Luqman leads every project, with trusted specialists brought in when a project needs them.</p>
+          <p>One team from first call to launch, with trusted specialists brought in when a project needs them.</p>
         </div>
         <div>
           <h2 class="footer-heading">Services</h2>

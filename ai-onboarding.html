@@ -21,9 +21,10 @@
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://images.unsplash.com">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap">
-  <link rel="stylesheet" href="styles.css?v=4">
-  <script src="main.js?v=4"></script>
+  <link rel="stylesheet" href="styles.css?v=5">
+  <script src="main.js?v=5"></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -50,14 +51,19 @@
   </header>
 
   <main id="main">
-    <section class="page-hero" aria-labelledby="page-title">
+    <section class="page-hero has-photo" aria-labelledby="page-title">
       <div class="container">
-        <p class="eyebrow">AI onboarding</p>
-        <h1 id="page-title">AI training and setup for small businesses</h1>
-        <p class="lead">We set up AI tools like ChatGPT, Claude and Microsoft Copilot for your business, build ready-to-use workflows around your everyday tasks, and train you and your team to use them safely.</p>
-        <div class="btn-row">
-          <a class="btn btn-primary" href="contact.html">Book a free 20-minute call</a>
-          <a class="btn btn-secondary" href="#packages">See AI packages</a>
+        <div>
+          <p class="eyebrow">AI onboarding</p>
+          <h1 id="page-title">AI training and setup for small businesses</h1>
+          <p class="lead">We set up AI tools like ChatGPT, Claude and Microsoft Copilot for your business, build ready-to-use workflows around your everyday tasks, and train you and your team to use them safely.</p>
+          <div class="btn-row">
+            <a class="btn btn-primary" href="contact.html">Book a free 20-minute call</a>
+            <a class="btn btn-secondary" href="#packages">See AI packages</a>
+          </div>
+        </div>
+        <div class="hero-photo">
+          <img src="https://images.unsplash.com/photo-1501504905252-473c47e087f8?w=1200&amp;q=75&amp;auto=format&amp;fit=crop" srcset="https://images.unsplash.com/photo-1501504905252-473c47e087f8?w=700&amp;q=75&amp;auto=format&amp;fit=crop 700w, https://images.unsplash.com/photo-1501504905252-473c47e087f8?w=1200&amp;q=75&amp;auto=format&amp;fit=crop 1200w" sizes="(min-width: 900px) 46vw, 100vw" width="1200" height="900" loading="lazy" decoding="async" alt="Open laptop beside a notebook, pen and mug of coffee on a bright desk">
         </div>
       </div>
     </section>
@@ -65,7 +71,7 @@
     <!-- Who it's for -->
     <section class="section" aria-labelledby="who-title">
       <div class="container">
-        <div class="section-head">
+        <div class="section-head reveal">
           <p class="eyebrow">Who it's for</p>
           <h2 id="who-title">Built around the work you already do</h2>
           <p>You don't need to be technical. We start with the tasks that take up your time, then show you where AI can genuinely help — and where it shouldn't be used.</p>
@@ -103,7 +109,7 @@
     <!-- What we set up -->
     <section class="section section-white" aria-labelledby="setup-title">
       <div class="container">
-        <div class="section-head">
+        <div class="section-head reveal">
           <p class="eyebrow">What we set up</p>
           <h2 id="setup-title">Practical tools you'll actually use</h2>
         </div>
@@ -138,12 +144,30 @@
     </section>
 
     <!-- Data protection -->
-    <section class="section" aria-labelledby="data-title">
+    <section class="section" aria-labelledby="ai-onboarding-media-title">
+      <div class="container media-split">
+        <div class="media-photo reveal">
+          <img src="https://images.unsplash.com/photo-1631557777232-a2632ae3c67d?w=1200&amp;q=75&amp;auto=format&amp;fit=crop" srcset="https://images.unsplash.com/photo-1631557777232-a2632ae3c67d?w=700&amp;q=75&amp;auto=format&amp;fit=crop 700w, https://images.unsplash.com/photo-1631557777232-a2632ae3c67d?w=1200&amp;q=75&amp;auto=format&amp;fit=crop 1200w" sizes="(min-width: 900px) 50vw, 100vw" width="1200" height="900" loading="lazy" decoding="async" alt="Laptop and printed documents with a pen on a wooden desk">
+        </div>
+        <div class="reveal">
+          <p class="eyebrow">In practice</p>
+          <h2 id="ai-onboarding-media-title">From long documents to clear next steps</h2>
+          <p>We start with the paperwork and admin that slows you down, then set up AI tools to draft, summarise and organise it — with a person checking anything that matters.</p>
+          <ul class="check-list">
+            <li>Summaries of long reports and guidance</li>
+            <li>First drafts of emails, letters and policies</li>
+            <li>Meeting notes turned into action lists</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-white" aria-labelledby="data-title">
       <div class="container split">
         <div>
           <p class="eyebrow">Our approach</p>
           <h2 id="data-title">Careful with data from day one</h2>
-          <p>Luqman spent over 12 years in UK financial services working in quality assurance, compliance and financial crime. That background shapes how we approach AI: useful, but with sensible controls.</p>
+          <p>Grow Digital was founded by a compliance professional with 12+ years in UK financial services (quality assurance, compliance, financial crime). That background shapes how we approach AI: useful, but with sensible controls.</p>
           <p class="muted">We help you think through data protection in practical terms, but we're not lawyers and this isn't legal advice. If your business is regulated, we'll work alongside your compliance lead or your regulator's guidance.</p>
         </div>
         <div class="card">
@@ -160,9 +184,9 @@
     </section>
 
     <!-- Packages -->
-    <section class="section section-white" id="packages" aria-labelledby="packages-title">
+    <section class="section" id="packages" aria-labelledby="packages-title">
       <div class="container">
-        <div class="section-head">
+        <div class="section-head reveal">
           <p class="eyebrow">AI packages</p>
           <h2 id="packages-title">Start small, or bring the whole team</h2>
         </div>
@@ -207,17 +231,14 @@
           </article>
         </div>
 
-        <div class="callout after-grid">
-          <p><strong>Founding client offer:</strong> 15% off any AI package for our first 10 clients, in exchange for an honest review once the work is done.</p>
-        </div>
         <p class="note after-grid">Prices exclude ad spend and third-party subscriptions, such as paid ChatGPT, Claude or Microsoft Copilot plans.</p>
       </div>
     </section>
 
     <!-- FAQ -->
-    <section class="section" aria-labelledby="faq-title">
+    <section class="section section-white" aria-labelledby="faq-title">
       <div class="container">
-        <div class="section-head">
+        <div class="section-head reveal">
           <p class="eyebrow">FAQ</p>
           <h2 id="faq-title">AI onboarding questions</h2>
         </div>
@@ -282,7 +303,7 @@
         <div>
           <a class="logo" href="index.html" aria-label="Grow Digital home"><span class="logo-mark" aria-hidden="true">G</span>Grow Digital</a>
           <p>Websites, AI onboarding and social media for small businesses across the UK.</p>
-          <p>A small UK team — Luqman leads every project, with trusted specialists brought in when a project needs them.</p>
+          <p>One team from first call to launch, with trusted specialists brought in when a project needs them.</p>
         </div>
         <div>
           <h2 class="footer-heading">Services</h2>

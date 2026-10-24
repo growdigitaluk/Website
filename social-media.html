@@ -21,9 +21,10 @@
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://images.unsplash.com">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap">
-  <link rel="stylesheet" href="styles.css?v=4">
-  <script src="main.js?v=4"></script>
+  <link rel="stylesheet" href="styles.css?v=5">
+  <script src="main.js?v=5"></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -50,14 +51,19 @@
   </header>
 
   <main id="main">
-    <section class="page-hero" aria-labelledby="page-title">
+    <section class="page-hero has-photo" aria-labelledby="page-title">
       <div class="container">
-        <p class="eyebrow">Social media</p>
-        <h1 id="page-title">Social media management for small businesses</h1>
-        <p class="lead">Regular, on-brand posts for your business, planned a month ahead and approved by you before anything goes live. You stay in control of your accounts — we never need your passwords.</p>
-        <div class="btn-row">
-          <a class="btn btn-primary" href="contact.html">Book a free 20-minute call</a>
-          <a class="btn btn-secondary" href="#packages">See social media packages</a>
+        <div>
+          <p class="eyebrow">Social media</p>
+          <h1 id="page-title">Social media management for small businesses</h1>
+          <p class="lead">Regular, on-brand posts for your business, planned a month ahead and approved by you before anything goes live. You stay in control of your accounts — we never need your passwords.</p>
+          <div class="btn-row">
+            <a class="btn btn-primary" href="contact.html">Book a free 20-minute call</a>
+            <a class="btn btn-secondary" href="#packages">See social media packages</a>
+          </div>
+        </div>
+        <div class="hero-photo">
+          <img src="https://images.unsplash.com/photo-1758272422316-9d068810052d?w=1200&amp;q=75&amp;auto=format&amp;fit=crop" srcset="https://images.unsplash.com/photo-1758272422316-9d068810052d?w=700&amp;q=75&amp;auto=format&amp;fit=crop 700w, https://images.unsplash.com/photo-1758272422316-9d068810052d?w=1200&amp;q=75&amp;auto=format&amp;fit=crop 1200w" sizes="(min-width: 900px) 46vw, 100vw" width="1200" height="900" loading="lazy" decoding="async" alt="Hands photographing potted plants with a phone on a wooden table">
         </div>
       </div>
     </section>
@@ -65,7 +71,7 @@
     <!-- Packages -->
     <section class="section" id="packages" aria-labelledby="packages-title">
       <div class="container">
-        <div class="section-head">
+        <div class="section-head reveal">
           <p class="eyebrow">Packages</p>
           <h2 id="packages-title">Two simple monthly plans</h2>
           <p>Cancel anytime with 30 days' notice.</p>
@@ -106,7 +112,7 @@
     <!-- What's included -->
     <section class="section section-white" aria-labelledby="included-title">
       <div class="container">
-        <div class="section-head">
+        <div class="section-head reveal">
           <p class="eyebrow">What's included</p>
           <h2 id="included-title">Everything you need to post consistently</h2>
         </div>
@@ -141,9 +147,27 @@
     </section>
 
     <!-- Approval -->
-    <section class="section" aria-labelledby="approval-title">
+    <section class="section" aria-labelledby="social-media-media-title">
+      <div class="container media-split">
+        <div class="media-photo reveal">
+          <img src="https://images.unsplash.com/photo-1491492628162-d88fbe1cdd04?w=1200&amp;q=75&amp;auto=format&amp;fit=crop" srcset="https://images.unsplash.com/photo-1491492628162-d88fbe1cdd04?w=700&amp;q=75&amp;auto=format&amp;fit=crop 700w, https://images.unsplash.com/photo-1491492628162-d88fbe1cdd04?w=1200&amp;q=75&amp;auto=format&amp;fit=crop 1200w" sizes="(min-width: 900px) 50vw, 100vw" width="1200" height="900" loading="lazy" decoding="async" alt="Flat lay of a camera, phone, glasses, notebook and coffee on a white desk">
+        </div>
+        <div class="reveal">
+          <p class="eyebrow">Your content</p>
+          <h2 id="social-media-media-title">Your photos, made to work harder</h2>
+          <p>Real photos of your work, products and premises almost always beat stock images. We'll show you what to capture and turn it into polished posts.</p>
+          <ul class="check-list">
+            <li>Simple guidance on what to photograph</li>
+            <li>Consistent colours and layouts across posts</li>
+            <li>Captions written in your tone of voice</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-white" aria-labelledby="approval-title">
       <div class="container">
-        <div class="section-head">
+        <div class="section-head reveal">
           <p class="eyebrow">How content approval works</p>
           <h2 id="approval-title">Nothing goes live without your OK</h2>
         </div>
@@ -170,7 +194,7 @@
     </section>
 
     <!-- No passwords -->
-    <section class="section section-white" aria-labelledby="access-title">
+    <section class="section" aria-labelledby="access-title">
       <div class="container split">
         <div>
           <p class="eyebrow">Your accounts, your control</p>
@@ -190,9 +214,9 @@
     </section>
 
     <!-- FAQ -->
-    <section class="section" aria-labelledby="faq-title">
+    <section class="section section-white" aria-labelledby="faq-title">
       <div class="container">
-        <div class="section-head">
+        <div class="section-head reveal">
           <p class="eyebrow">FAQ</p>
           <h2 id="faq-title">Social media questions</h2>
         </div>
@@ -251,7 +275,7 @@
         <div>
           <a class="logo" href="index.html" aria-label="Grow Digital home"><span class="logo-mark" aria-hidden="true">G</span>Grow Digital</a>
           <p>Websites, AI onboarding and social media for small businesses across the UK.</p>
-          <p>A small UK team — Luqman leads every project, with trusted specialists brought in when a project needs them.</p>
+          <p>One team from first call to launch, with trusted specialists brought in when a project needs them.</p>
         </div>
         <div>
           <h2 class="footer-heading">Services</h2>
